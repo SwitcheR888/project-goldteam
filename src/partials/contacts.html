@@ -54,7 +54,7 @@
 
       <form class="contact-group">
         <div class="form-group">
-          <label class="form-label" for="iser-name">Name</label>
+          <label class="form-label" for="user-name">Name</label>
           <input
             class="form-input"
             type="text"
@@ -77,11 +77,11 @@
             placeholder="+1 234 123 23"
             autocomplete="tel"
             required
-            pattern=" ^+[0-9\s]{14}$"
+            pattern="^+[0-9\s]{14}$"
           />
         </div>
         <div class="form-group">
-          <label class="for,-label" for="user-message"
+          <label class="form-label" for="user-message"
             >Describe what you want</label
           >
           <textarea
@@ -91,6 +91,7 @@
             placeholder="Type your message..."
             maxlength="500"
             rows="6"
+            required
           ></textarea>
         </div>
         <button class="contact-btn" type="submit">Submit</button>
