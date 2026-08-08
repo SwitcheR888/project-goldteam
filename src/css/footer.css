@@ -2,6 +2,10 @@
   --font-family: "Mulish", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .footer {
   width: 100%;
   background-color: #ffffff;
@@ -88,18 +92,29 @@
 .footer-nav-list li a {
   text-decoration: none;
   color: #000;
-  font-size: 16px;
-  line-height: 27px;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  color: #000;
 }
 
-.footer-nav-list li a:hover {
-  color: #343434;
+.footer-nav-list li a:hover,
+.footer-nav-list li a:focus {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  outline: none;
+}
+
+.footer-nav-list li a:active {
+  color: #8668C7;
+  text-decoration: none;
+}
+
+.footer-nav-list li a.disabled {
+  color: #000000;
+  pointer-events: none;
+  text-decoration: none;
 }
 
 .footer-bottom {
@@ -117,4 +132,91 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+  .footer-container {
+    padding: 0 64px;
+  }
+
+  .footer-logo {
+    margin-bottom: 30px;
+  }
+
+  .footer-logo img {
+    width: 318px;
+    height: 98.24px;
+  }
+
+  .footer-nav {
+    margin-top: 64px;
+  }
+
+
+  .footer-nav-list li a {
+    font-size: 16px;
+  }
+
+  .footer-bottom {
+    border-top: 1.5px solid #d7d7d7;
+  }
+
+}
+
+
+
+@media screen and (min-width: 1440px) {
+
+  .footer-container {
+    padding: 0 64px;
+    display: block;
+    max-width: 100%;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer-left {
+    align-items: flex-start;
+  }
+
+  .footer-logo {
+    margin-bottom: 0px;
+    margin-left: 2.5px;
+  }
+
+  .footer-logo img {
+    width: 80px;
+    height: 32px;
+  }
+
+  .footer-socials li a {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer-socials li a img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer-socials {
+    margin: 32px 0 0 0;
+  }
+
+  .footer-nav {
+    margin-top: 0;
+    width: 303px;
+  }
+
+  .footer-nav-list {
+    align-items: flex-start;
+  }
 }
