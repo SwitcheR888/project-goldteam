@@ -117,7 +117,14 @@
    }
 
    .gallery__page-image {
+      width: calc((100% - 32px) / 2);
       max-width: 640px;
+      flex-shrink: 1;
+   }
+
+   .gallery__page-image:nth-child(1),
+   .gallery__page-image:nth-child(4) {
+      height: 640px;
    }
 
    .gallery__page-image:nth-child(2),
