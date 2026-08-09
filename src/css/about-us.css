@@ -1,21 +1,104 @@
-.badges-list {
+.about-us,
+.about-us *,
+.about-us *::before,
+.about-us *::after {
+  box-sizing: border-box;
+}
+
+.images-about-us {
+  margin-bottom: 24px;
+}
+
+.about-us-content {
+  width: 100%;
+}
+
+.title-about-us {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.about-us-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-us-item {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  gap: 32px;
-}
-.badges-link {
-  display: block;
-  padding: 8px 16px;
-  border: 1px solid;
-  border-radius: 8px;
-  transition: 200ms ease-in;
-}
-.badges-link:hover,
-.badges-link:focus {
-  transform: scale(1.06);
-  color: #747bff;
+  gap: 8px;
+  margin-bottom: 24px;
 }
 
+.about-us-item:last-child {
+  margin-bottom: 0;
+}
 
+.about-us-item::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.about-us-item-leaf::before {
+  background-image: url('../svg-icons/leaf.svg');
+}
+
+.about-us-item-heart::before {
+  background-image: url('../svg-icons/donate-heart.svg');
+}
+
+.about-us-item-story::before {
+  background-image: url('../svg-icons/book.svg');
+}
+
+@media screen and (min-width: 768px) {
+  .about-us {
+    padding: 112px 0;
+  }
+
+  .images-about-us {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us {
+    padding: 112px 0;
+  }
+
+  .about-us-container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .images-about-us {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .about-us-content {
+    width: 50%;
+  }
+
+  .title-about-us {
+    font-size: 48px;
+  }
+}
