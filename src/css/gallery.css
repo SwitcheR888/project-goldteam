@@ -68,6 +68,7 @@
 
    .gallery__page-image {
       max-width: 340px;
+      height: 368px;
    }
 
    .gallery__page-image:nth-child(2),
