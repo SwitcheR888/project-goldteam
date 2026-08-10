@@ -86,8 +86,11 @@
 }
 
 /* TABLET: 768px */
-
 @media screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+  }
+
   .benefits-list {
     grid-template-columns: repeat(8, 1fr);
     column-gap: 24px;
@@ -98,12 +101,18 @@
     grid-column: 1 / -1;
     width: 100%;
     height: 170px;
+    min-height: 0;
+    padding: 12px 32px;
   }
 }
 
 /* DESKTOP: 1440px */
-
 @media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1312px;
+      padding: 0;
+  }
+
   .benefits-section {
     padding: 64px;
     background: var(--color-scheme-2-background);
