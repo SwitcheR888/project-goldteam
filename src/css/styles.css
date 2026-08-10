@@ -21,9 +21,3 @@
 
 /* додав  @import url('./mobile-menu.css');*/
 @import url('./mobile-menu.css');
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
