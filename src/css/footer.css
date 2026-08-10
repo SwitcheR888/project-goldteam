@@ -17,7 +17,6 @@ html {
 }
 
 .footer-container {
-  width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
@@ -43,7 +42,6 @@ html {
 .footer-logo img {
   width: 217px;
   max-width: 100%;
-  width: 217px;
   height: 93px;
 }
 
@@ -128,7 +126,6 @@ html {
   margin: 0;
   font-family: var(--font-family);
   color: #000;
-  line-height: 21px;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -143,7 +140,7 @@ html {
   }
 
   .footer-logo {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 
   .footer-logo img {
@@ -172,7 +169,6 @@ html {
 
   .footer-container {
     padding: 0 64px;
-    display: block;
     max-width: 100%;
   }
 
