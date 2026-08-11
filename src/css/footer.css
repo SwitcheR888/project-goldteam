@@ -3,8 +3,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.footer {}
-
 .footer-container {
   padding: 80px 20px;
 }
@@ -21,8 +19,6 @@ html {
   align-items: center;
   gap: 32px;
 }
-
-.footer-logo {}
 
 .footer-logo img {
   width: 217px;
@@ -80,6 +76,34 @@ html {
   line-height: 1.5;
 }
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    padding: 80px 64px;
+  }
+
+  .footer-top {
+    gap: 32px;
+  }
+
+  .footer-socials {
+    margin-top: 0;
+  }
+
+  .footer-nav {
+    margin-top: 0;
+  }
+
+  .footer-nav-link {
+    font-size: 16px;
+  }
+
+  .footer-bottom {
+    margin-top: 32px;
+  }
+
+  .footer-copyright {
+    text-align: center;
+  }
+}
 
 @media screen and (min-width: 1440px) {}
