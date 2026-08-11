@@ -106,4 +106,50 @@ html {
   }
 }
 
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+  .footer-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 80px 64px;
+  }
+
+  .footer-top {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-left {
+    align-items: flex-start;
+  }
+
+  .footer-logo img {
+    width: 84px;
+    height: 36px;
+  }
+
+  .footer-socials {
+    justify-content: flex-start;
+  }
+
+  .footer-socials a {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer-social-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer-nav-list {}
+
+  .footer-nav-link {
+    font-weight: 300;
+  }
+
+  .footer-bottom {
+    margin-top: 24px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+}
