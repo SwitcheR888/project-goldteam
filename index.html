@@ -14,7 +14,7 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
   <title>Vanilla App Template</title>
-  <link rel="stylesheet" crossorigin href="//project-goldteam/assets/index-CnU5zRxq.css">
+  <link rel="stylesheet" crossorigin href="//project-goldteam/assets/index-DD2YIW8F.css">
 </head>
 
 <body>
@@ -149,9 +149,110 @@
     </div>
   </div>
 </section>
-    <section class="contacts">
-    <h2>Contact Us</h2>
+    <section class="contacts section" id="contacts">
+  <div class="container">
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <p class="contact-subtitle">Connect</p>
+        <h2 class="contact-title">Order your unique jewelry</h2>
+        <p class="contact-text">We'd love to hear more details from you!</p>
+      </div>
+
+      <div class="contact-bottom">
+        <ul class="contact-list">
+          <li class="contact-item">
+            <svg class="contact-icon" width="32" height="32">
+              <use href="//project-goldteam/assets/sprite-ClQ1giDr.svg#envelope"></use>
+            </svg>
+
+            <div class="contact-content">
+              <p class="contact-label">Email</p>
+              <a class="contact-link" href="mailto:info@handmadejewelry.com"
+                >info@handmadejewelry.com</a
+              >
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <svg class="contact-icon" width="32" height="32">
+              <use href="//project-goldteam/assets/sprite-ClQ1giDr.svg#phone"></use>
+            </svg>
+
+            <div class="contact-content">
+              <p class="contact-label">Phone</p>
+              <a class="contact-link" href="tel:+15550000000"
+                >+1 (555) 000-0000</a
+              >
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <svg class="contact-icon" width="32" height="32">
+              <use href="//project-goldteam/assets/sprite-ClQ1giDr.svg#map"></use>
+            </svg>
+
+            <div class="contact-content">
+              <p class="contact-label">Office</p>
+              <a
+                class="contact-link"
+                href="https://maps.google.com/?q=76-8+Oakington+Manor+Dr,+London,+UK"
+                target="_blank"
+                rel="noopener noreferrer"
+                >76-8 Oakington Manor Dr, London, UK</a
+              >
+            </div>
+          </li>
+        </ul>
+
+        <form class="contact-group">
+          <div class="form-group">
+            <label class="form-label" for="user-name">Name</label>
+            <input
+              class="form-input"
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Tony"
+              autocomplete="name"
+              required
+              pattern="^[a-zA-Z\s\.]{5,28}$"
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="user-phone">Phone</label>
+            <input
+              class="form-input"
+              type="tel"
+              id="user-phone"
+              name="user-phone"
+              placeholder="+1 234 123 23"
+              autocomplete="tel"
+              required
+              pattern="^[+0-9\s]{14}$"
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="user-message"
+              >Describe what you want</label
+            >
+            <textarea
+              class="form-textarea"
+              name="user-message"
+              id="user-message"
+              placeholder="Type your message..."
+              maxlength="500"
+              rows="6"
+              required
+            ></textarea>
+          </div>
+          <button class="contact-btn" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </section>
+
   </main>
 
   <footer class="footer">
