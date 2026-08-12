@@ -106,7 +106,7 @@
 
 @media (min-width: 1400px) {
   .header {
-    padding: 0;
+    padding: 0 64px;
   }
 
   .header-container {
