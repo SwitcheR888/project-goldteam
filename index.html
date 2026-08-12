@@ -14,45 +14,93 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
   <title>Vanilla App Template</title>
-  <link rel="stylesheet" crossorigin href="/project-goldteam/assets/index-BNLND4XL.css">
+  <link rel="stylesheet" crossorigin href="/project-goldteam/assets/index-Qa0yx-BF.css">
 </head>
 
 <body>
   <header class="header">
-  <div class="container header-container">
-    <a href="#top">
-      <img class="logo-icons" src="/project-goldteam/assets/logo-CGWY3pfU.svg" alt="Logo" />
-    </a>
+  <button class="mobile-menu-open" type="button" aria-label="Open mobile menu">
+    <svg class="mobile-menu-open-icon" width="24" height="24">
+      <use href="/project-goldteam/assets/sprite-ClQ1giDr.svg#menu"></use>
+    </svg>
+  </button>
 
-    <button type="button" class="burger-btn" aria-label="open menu" id="menu">
-      <svg width="24" height="24">
-        <use href="/project-goldteam/assets/sprite-ClQ1giDr.svg#menu"></use>
-      </svg>
-    </button>
+  <nav class="header-nav">
+    <ul class="header-nav-list">
+      <li class="header-nav-items">
+        <a href="#about-us" class="header-nav-link">About us</a>
+      </li>
+      <li class="header-nav-items">
+        <a href="#benefits" class="header-nav-link">Benefits</a>
+      </li>
+      <li class="header-nav-items">
+        <a href="#gallery" class="header-nav-link">Gallery</a>
+      </li>
+      <li class="header-nav-items">
+        <a href="#testimonials" class="header-nav-link">Testimonials</a>
+      </li>
+      <li class="header-nav-items">
+        <a href="#contacts" class="header-nav-link">Contacts</a>
+      </li>
+    </ul>
+  </nav>
 
-    <nav class="header-nav">
-      <ul class="header-nav-list">
-        <li class="header-nav-items">
-          <a href="#about-us" class="header-nav-link">About us</a>
-        </li>
-        <li class="header-nav-items">
-          <a href="#benefits" class="header-nav-link">Benefits</a>
-        </li>
-        <li class="header-nav-items">
-          <a href="#gallery" class="header-nav-link">Gallery</a>
-        </li>
-        <li class="header-nav-items">
-          <a href="#testimonials" class="header-nav-link">Testimonials</a>
-        </li>
-        <li class="header-nav-items">
-          <a href="#contacts" class="header-nav-link">Contacts</a>
-        </li>
-      </ul>
-    </nav>
-
-    <a href="#contacts" class="header-btn">Order Now</a>
+  <a href="#contacts" class="header-btn">Order Now</a>
   </div>
 </header>
+  <div class="mobile-menu">
+  <div class="mobile-menu-container">
+    <div class="mobile-menu-top">
+      <a class="mobile-menu-logo" href="./index.html" aria-label="Home">
+        <img
+          class="mobile-menu-logo-img"
+          src="/project-goldteam/assets/logo-CGWY3pfU.svg"
+          alt="Handmade Jewelry"
+          width="105"
+          height="33"
+        />
+      </a>
+
+      <button
+        class="mobile-menu-close"
+        type="button"
+        aria-label="Close mobile menu"
+      >
+        <svg class="mobile-menu-close-icon" width="24" height="24">
+          <use href="../svg-icons/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-menu-content">
+      <nav class="mobile-menu-nav" aria-label="Mobile navigation">
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#about-us">About us</a>
+          </li>
+
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#benefits">Benefits</a>
+          </li>
+
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#gallery">Gallery</a>
+          </li>
+
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#testimonials">Testimonials</a>
+          </li>
+
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="mobile-menu-order" href="#contacts">Order Now</a>
+    </div>
+  </div>
+</div>
+
 
   <main>
     <!-- Loads the specified .html file -->
@@ -412,7 +460,6 @@
     </div>
 </footer>
 
-  
 
 </body>
 
