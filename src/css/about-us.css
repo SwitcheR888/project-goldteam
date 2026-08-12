@@ -76,9 +76,18 @@
     padding: 112px 0;
   }
 
-  .images-about-us {
+  .image-about-us {
     margin-bottom: 32px;
   }
+
+    .about-us-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.5;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -92,7 +101,7 @@
     gap: 32px;
   }
 
-  .images-about-us {
+  .image-about-us {
     width: 50%;
     margin-bottom: 0;
   }
