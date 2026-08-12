@@ -12,10 +12,8 @@
 
 @media (min-resolution: 2dppx) {
   .hero.section {
-    background-image: image-set(
-      url(../img/hero-bg.jpg) 1x,
-      url(../img/hero-bg@2x.jpg) 2x
-    );
+    background-image: image-set(url(../img/hero-bg.jpg) 1x,
+        url(../img/hero-bg@2x.jpg) 2x);
   }
 }
 
@@ -89,10 +87,8 @@
 
   @media (min-resolution: 2dppx) {
     .hero.section {
-      background-image: image-set(
-        url(../img/hero-bg-tab.jpg) 1x,
-        url(../img/hero-bg-tab@2x.jpg) 2x
-      );
+      background-image: image-set(url(../img/hero-bg-tab.jpg) 1x,
+          url(../img/hero-bg-tab@2x.jpg) 2x);
     }
   }
 
@@ -112,18 +108,17 @@
 
 @media (min-width: 1440px) {
   .hero.section {
-    padding: 224px 0px 0px 64px;
+    margin: 0 auto;
+    padding: 224px 0 0 64px;
     width: 1440px;
-    height: 907px;
+    height: 864px;
     background-image: url(../img/hero-bg-desktop.jpg);
   }
 
   @media (min-resolution: 2dppx) {
     .hero.section {
-      background-image: image-set(
-        url(../img/hero-bg-desktop@2x.jpg) 1x,
-        url(../img/hero-bg-desktop@2x.jpg) 2x
-      );
+      background-image: image-set(url(../img/hero-bg-desktop.jpg) 1x,
+          url(../img/hero-bg-desktop@2x.jpg) 2x);
     }
   }
 
