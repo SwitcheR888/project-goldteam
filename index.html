@@ -14,21 +14,61 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
   <title>Vanilla App Template</title>
-  <link rel="stylesheet" crossorigin href="/project-goldteam/assets/index-DD2YIW8F.css">
+  <link rel="stylesheet" crossorigin href="/project-goldteam/assets/index-BM8e1rB_.css">
 </head>
 
 <body>
   <header class="header">
-  <h1>Header</h1>
-  <p></p>
-</header>
+  <div class="container header-container">
+    <a href="#top">
+      <img class="logo-icons" src="../svg-icons/logo.svg" alt="Logo" />
+    </a>
 
+    <button type="button" class="burger-btn" aria-label="open menu" id="menu">
+      <svg width="24" height="24">
+        <use href="../svg-icons/sprite.svg#menu"></use>
+      </svg>
+    </button>
+
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="header-nav-items">
+          <a href="#about-us" class="header-nav-link">About us</a>
+        </li>
+        <li class="header-nav-items">
+          <a href="#benefits" class="header-nav-link">Benefits</a>
+        </li>
+        <li class="header-nav-items">
+          <a href="#gallery" class="header-nav-link">Gallery</a>
+        </li>
+        <li class="header-nav-items">
+          <a href="#testimonials" class="header-nav-link">Testimonials</a>
+        </li>
+        <li class="header-nav-items">
+          <a href="#contacts" class="header-nav-link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+
+    <a href="#contacts" class="header-btn">Order Now</a>
+  </div>
+</header>
 
   <main>
     <!-- Loads the specified .html file -->
-    <section class="hero">
-    <h1>Hero Section</h1>
+    <section class="hero section">
+  <div class="container hero-container">
+    <div class="hero-wrap">
+      <h1 class="hero-title">Discover the Art of&nbsp;Handmade Jewelry</h1>
+      <p class="hero-text">
+        Each piece of our jewelry tells a story, crafted with love and care.
+        Embrace the beauty of uniqueness and sustainability in every design.
+      </p>
+    </div>
+    <a href="#contacts" class="hero-btn">Order Now</a>
+  </div>
 </section>
+
     <section class="about-us">
     <h2>About Us</h2>
 </section>
