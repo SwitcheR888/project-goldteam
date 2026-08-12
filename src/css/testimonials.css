@@ -49,34 +49,23 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-}
-
-.testimonials__list {
-    display: flex;
-    flex-direction: column;
-
-    gap: 24px;
 
     margin: 0;
     padding: 0;
-
     list-style: none;
 }
 
-.testimonials__review {
+.testimonials__item {
     display: flex;
     flex-direction: column;
-
     gap: 24px;
-
-    width: 100%;
 }
 
 .testimonials__image-box {
     width: 100%;
-    height: 260px;
-
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .testimonials__image-box--border {
@@ -87,7 +76,7 @@
     display: block;
 
     width: 100%;
-    height: 100%;
+    height: 260px;
 
     object-fit: cover;
 }
@@ -95,10 +84,10 @@
 .testimonial-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     width: 100%;
-    min-height: 214px;
+    min-height: auto;
 
     padding: 32px;
 
