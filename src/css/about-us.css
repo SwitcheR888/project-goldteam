@@ -1,16 +1,22 @@
-.about-us,
-.about-us *,
-.about-us *::before,
-.about-us *::after {
-  box-sizing: border-box;
+.about-us {
+  padding: 56px 0;
+}
+
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .images-about-us {
-  margin-bottom: 24px;
+  width: 100%;
+  height: auto;
 }
 
 .about-us-content {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .title-about-us {
@@ -19,7 +25,6 @@
   line-height: 1.2;
   letter-spacing: -0.01em;
   color: #000;
-  margin-bottom: 24px;
 }
 
 .text {
@@ -27,10 +32,12 @@
   font-size: 18px;
   line-height: 1.5;
   color: #000;
-  margin-bottom: 24px;
 }
 
 .about-us-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -40,15 +47,11 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 24px;
-}
-
-.about-us-item:last-child {
-  margin-bottom: 0;
 }
 
 .about-us-item::before {
   content: '';
+  flex-shrink: 0;
   width: 24px;
   height: 24px;
   background-repeat: no-repeat;
