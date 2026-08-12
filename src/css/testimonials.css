@@ -1,0 +1,245 @@
+/* Mobile version */
+.testimonials {
+    padding: 64px 0;
+    background-color: #ffffff;
+}
+
+.testimonials>.container {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.testimonials__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 24px;
+    margin-bottom: 40px;
+
+    text-align: center;
+}
+
+.testimonials__title {
+    margin: 0;
+
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+
+    color: #000000;
+}
+
+.testimonials__subtitle {
+    margin: 0;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: #000000;
+}
+
+.testimonials__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.testimonials__list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.testimonials__review {
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+
+    width: 100%;
+}
+
+.testimonials__image-box {
+    width: 100%;
+    height: 260px;
+
+    overflow: hidden;
+}
+
+.testimonials__image-box--border {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.testimonials__image {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100%;
+    min-height: 214px;
+
+    padding: 32px;
+
+    background-color: #f2f2f2;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-card__content {
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+}
+
+.testimonial-card__rating {
+    display: flex;
+    align-items: center;
+
+    gap: 4px;
+
+    width: 136px;
+    height: 24px;
+}
+
+.testimonial-card__star {
+    display: block;
+
+    width: 24px;
+    height: 24px;
+
+    flex-shrink: 0;
+}
+
+.testimonial-card__text {
+    margin: 0;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+
+    color: #000000;
+}
+
+.testimonial-card__author {
+    margin: 24px 0 0;
+
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: #000000;
+}
+
+/* Tablet version  */
+
+@media screen and (min-width: 768px) {
+    .testimonials {
+        padding: 64px 0;
+    }
+
+    .testimonials>.container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+
+    .testimonials__review {
+        flex-direction: row;
+        gap: 24px;
+        height: 260px;
+    }
+
+    .testimonials__review:first-child .testimonials__image-box {
+        flex: 0 0 203px;
+    }
+
+    .testimonials__review:first-child .testimonial-card {
+        flex: 0 0 250px;
+    }
+
+    .testimonials__review:last-child .testimonial-card {
+        flex: 0 0 248px;
+    }
+
+    .testimonials__review:last-child .testimonials__image-box {
+        flex: 0 0 204px;
+    }
+
+    .testimonial-card {
+        min-height: 260px;
+        height: 260px;
+    }
+
+    .testimonial-card__author {
+        margin-top: auto;
+    }
+}
+
+/* Desktop version */
+@media screen and (min-width: 1440px) {
+    .testimonials {
+        padding: 64px 0;
+    }
+
+    .testimonials>.container {
+        max-width: 1440px;
+        padding: 0 64px;
+    }
+
+    .testimonials__header {
+        max-width: 768px;
+        margin: 0 auto 80px;
+    }
+
+    .testimonials__title {
+        font-size: 48px;
+    }
+
+    .testimonials__list {
+        gap: 32px;
+    }
+
+    .testimonials__review {
+        gap: 32px;
+        height: 260px;
+    }
+
+    .testimonials__review:first-child .testimonials__image-box {
+        flex: 0 0 304px;
+    }
+
+    .testimonials__review:first-child .testimonial-card {
+        flex: 0 0 640px;
+    }
+
+    .testimonials__review:last-child .testimonial-card {
+        flex: 0 0 640px;
+    }
+
+    .testimonials__review:last-child .testimonials__image-box {
+        flex: 0 0 304px;
+    }
+}
