@@ -107,16 +107,18 @@
 @media (min-width: 1440px) {
   .header-container {
     max-width: 1440px;
+    justify-content: flex-start;
     margin: 0 auto;
     padding: 0 64px;
     gap: 48px;
   }
 
   .header-nav-list {
-    gap: 16px;
+    gap: 32px;
   }
 
   .header-btn {
     width: 192px;
+    margin-left: auto;
   }
 }

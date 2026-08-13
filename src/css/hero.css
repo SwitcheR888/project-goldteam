@@ -3,9 +3,9 @@
   width: 375px;
   height: 656px;
   padding: 160px 20px 0px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)),
-    url(../img/hero-bg.jpg);
+  border: 1px solid #000;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url(../img/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -13,9 +13,7 @@
 
 @media (min-resolution: 2dppx) {
   .hero.section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.4)),
-      image-set(url(../img/hero-bg.jpg) 1x,
+    background-image: image-set(url(../img/hero-bg.jpg) 1x,
         url(../img/hero-bg@2x.jpg) 2x);
   }
 }
@@ -87,18 +85,7 @@
     padding: 160px 32px 0px;
     width: 768px;
     height: 864px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.4)),
-      url(../img/hero-bg-tab.jpg);
-  }
-
-  @media (min-resolution: 2dppx) {
-    .hero.section {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.4),
-          rgba(0, 0, 0, 0.4)),
-        image-set(url(../img/hero-bg-tab.jpg) 1x,
-          url(../img/hero-bg-tab@2x.jpg) 2x);
-    }
+    background-image: url(../img/hero-bg-tab.jpg);
   }
 
   .container.hero-container {
@@ -115,6 +102,13 @@
   }
 }
 
+@media (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero.section {
+    background-image: image-set(url(../img/hero-bg-tab.jpg) 1x,
+        url(../img/hero-bg-tab@2x.jpg) 2x);
+  }
+}
+
 /* Desktop version */
 @media (min-width: 1440px) {
   .hero.section {
@@ -122,18 +116,7 @@
     padding: 224px 0 0 64px;
     width: 1440px;
     height: 864px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.4)),
-      url(../img/hero-bg-desktop.jpg);
-  }
-
-  @media (min-resolution: 2dppx) {
-    .hero.section {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.4),
-          rgba(0, 0, 0, 0.4)),
-        image-set(url(../img/hero-bg-desktop.jpg) 1x,
-          url(../img/hero-bg-desktop@2x.jpg) 2x);
-    }
+    background-image: url(../img/hero-bg-desktop.jpg);
   }
 
   .hero-wrap {
@@ -146,5 +129,12 @@
 
   .hero-btn {
     width: 192px;
+  }
+}
+
+@media (min-width: 1440px) and (min-resolution: 2dppx) {
+  .hero.section {
+    background-image: image-set(url(../img/hero-bg-desktop.jpg) 1x,
+        url(../img/hero-bg-desktop@2x.jpg) 2x);
   }
 }
