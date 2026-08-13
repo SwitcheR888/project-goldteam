@@ -1,19 +1,117 @@
-.badges-list {
+.about-us {
+  padding: 56px 0;
+}
+
+.about-us-container {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   gap: 32px;
 }
-.badges-link {
-  display: block;
-  padding: 8px 16px;
-  border: 1px solid;
-  border-radius: 8px;
-  transition: 200ms ease-in;
+
+.images-about-us {
+  width: 100%;
+  height: auto;
 }
-.badges-link:hover,
-.badges-link:focus {
-  transform: scale(1.06);
-  color: #747bff;
+
+.about-us-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title-about-us {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #000;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000;
+}
+
+.about-us-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-us-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.about-us-item::before {
+  content: '';
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.about-us-item-leaf::before {
+  background-image: url('../svg-icons/leaf.svg');
+}
+
+.about-us-item-heart::before {
+  background-image: url('../svg-icons/donate-heart.svg');
+}
+
+.about-us-item-story::before {
+  background-image: url('../svg-icons/book.svg');
+}
+
+@media screen and (min-width: 768px) {
+  .about-us {
+    padding: 112px 0;
+  }
+
+  .image-about-us {
+    margin-bottom: 32px;
+  }
+
+  .about-us-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us {
+    padding: 112px 0;
+  }
+
+  .about-us-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .image-about-us {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .about-us-content {
+    width: 50%;
+  }
+
+  .title-about-us {
+    font-size: 48px;
+  }
 }
