@@ -1,4 +1,4 @@
-/*Mobile version*/
+/* Mobile version */
 .header-container {
   display: flex;
   align-items: center;
@@ -28,6 +28,7 @@
   display: none;
 }
 
+/* Tablet version */
 @media (min-width: 768px) {
   .header-container {
     width: 100%;
@@ -102,9 +103,11 @@
   }
 }
 
+/* Desktop version */
 @media (min-width: 1440px) {
   .header-container {
     max-width: 1440px;
+    margin: 0 auto;
     padding: 0 64px;
     gap: 48px;
   }
