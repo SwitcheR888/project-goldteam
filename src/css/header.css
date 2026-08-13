@@ -102,7 +102,7 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
   .header-container {
     max-width: 1440px;
     padding: 0 64px;
@@ -114,6 +114,6 @@
   }
 
   .header-btn {
-    width: 119px;
+    width: 192px;
   }
 }
